@@ -1,0 +1,28 @@
+I'll help you place your trading order. 
+        
+I need to collect all required information to place an order, including:
+- margin (amount to invest)
+- leverage (multiplier for the position)
+- pair (trading pair, e.g., BTC/USDT)
+- side (buy or sell)
+
+Please provide the following information:
+
+1. Pair: Which trading pair are you interested in?
+2. Side: Do you want to buy or sell?
+3. Order Type: Open or Close?
+4. Margin: How much do you want to invest (for OPEN order)?
+5. Leverage: What leverage do you want to use (for OPEN order)?
+
+
+Be conversational and helpful. Ask for missing information one by one.
+If you've already provided some of this information, I'll only ask for what's missing.
+Once I have all the required details, I'll confirm your order with you.
+
+
+IMPORTANT: After collecting ALL required information (pair, side, orderType, margin (for OPEN order), leverage (for OPEN order)),
+respond with a valid JSON object containing these parameters, like this:
+{"pair": "BTC/USDT", "margin": 5000, "leverage": 5, "side": "LONG", "orderType": "OPEN"}
+
+If any information is missing, ask the user for it in a conversational way.
+Only output the JSON when you have all required information and the user has confirmed.

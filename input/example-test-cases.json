@@ -1,0 +1,135 @@
+[
+  {
+    "input": "I want to buy Bitcoin with 5000 USDT at 5x leverage",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "I want to buy Bitcoin with 5000 USDT at 5x leverage"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for providing those details. I need to confirm which trading pair you want to use. Would you like to trade BTC/USDT?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, BTC/USDT"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for providing those details. To confirm your order:\n- Pair: BTC/USDT\n- Margin: 5000 USDT\n- Leverage: 5x\n- Side: Buy\n- Order Type: Open\n\nIs this correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"pair\": \"BTC/USDT\", \"margin\": 5000, \"leverage\": 5, \"side\": \"LONG\", \"orderType\": \"OPEN\"}"
+      }
+    ],
+    "finalOutput": {
+      "pair": "BTC/USDT",
+      "margin": 5000,
+      "leverage": 5,
+      "side": "LONG",
+      "orderType": "OPEN"
+    }
+  },
+  {
+    "input": "I want to short ETH",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "I want to short ETH"
+      },
+      {
+        "role": "assistant",
+        "content": "I'll help you place a short order for ETH. I need a few more details:\n1. How much would you like to invest (margin)?\n2. What leverage do you want to use?\n3. Which trading pair exactly (e.g., ETH/USDT)?"
+      },
+      {
+        "role": "user",
+        "content": "2000 USDT with 10x leverage on ETH/USDT"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for providing those details. To confirm your order:\n- Pair: ETH/USDT\n- Margin: 2000 USDT\n- Leverage: 10x\n- Side: Sell (Short)\n- Order Type: Open\n\nIs this correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"pair\": \"ETH/USDT\", \"margin\": 2000, \"leverage\": 10, \"side\": \"SHORT\", \"orderType\": \"OPEN\"}"
+      }
+    ],
+    "finalOutput": {
+      "pair": "ETH/USDT",
+      "margin": 2000,
+      "leverage": 10,
+      "side": "SHORT",
+      "orderType": "OPEN"
+    }
+  },
+  {
+    "input": "I want to trade BTC",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "I want to trade BTC"
+      },
+      {
+        "role": "assistant",
+        "content": "I'll help you place an order for BTC. I need a few more details:\n1. How much would you like to invest (margin)?\n2. What leverage do you want to use?\n3. Do you want to buy or sell?\n4. Which trading pair exactly (e.g., BTC/USDT)?"
+      },
+      {
+        "role": "user",
+        "content": "I want to buy with 1000 USDT and 3x leverage on BTC/USDT"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for providing those details. To confirm your order:\n- Pair: BTC/USDT\n- Margin: 1000 USDT\n- Leverage: 3x\n- Side: Buy\n- Order Type: Open\n\nIs this correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"pair\": \"BTC/USDT\", \"margin\": 1000, \"leverage\": 3, \"side\": \"LONG\", \"orderType\": \"OPEN\"}"
+      }
+    ],
+    "finalOutput": {
+      "pair": "BTC/USDT",
+      "margin": 1000,
+      "leverage": 3,
+      "side": "LONG",
+      "orderType": "OPEN"
+    }
+  },
+  {
+    "input": "Close my ETH position",
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Close my ETH position"
+      },
+      {
+        "role": "assistant",
+        "content": "I'll help you with that. Let me confirm the details for your order."
+      },
+      {
+        "role": "user",
+        "content": "Yes, that's correct."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"pair\":\"ETH/USDT\",\"orderType\":\"CLOSE\"}"
+      }
+    ],
+    "finalOutput": {
+      "pair": "ETH/USDT",
+      "orderType": "CLOSE"
+    }
+  }
+]
